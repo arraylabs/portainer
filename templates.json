@@ -1,7 +1,7 @@
 [{
 	"type": "container",
 	"title": "HomeAssistant",
-	"description": "Home Automation server",
+	"description": "Home Automation Server",
 	"logo": "https://home-assistant.io/images/components/alexa/alexa-512x512.png",
 	"image": "homeassistant/home-assistant",
 	"platform": "linux",
@@ -15,6 +15,13 @@
 		},
 		{
 			"/dev/ttyUSB1": "/dev/ttyUSB1"
+		}
+	],
+	"volumes": [{
+			"container": "/usr/local/share/python-openzwave/config/options.xml"
+		},
+		{
+			"container": "/usr/src/app/homeassistant/custom_components"
 		}
 	]
 }]
