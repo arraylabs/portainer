@@ -6,8 +6,7 @@
 	"image": "homeassistant/home-assistant",
 	"platform": "linux",
 	"ports": [
-		"8123/tcp",
-		"443/tcp"
+		"8123/tcp"
 	],
 	"network": "host",
 	"volumes": [{
@@ -25,5 +24,3 @@
 		}
 	]
 }]
-
-
