@@ -10,6 +10,13 @@
 		"443/tcp"
 	],
 	"network": "host",
+	"volumes": [{
+			"container": "/usr/local/share/python-openzwave/config/options.xml"
+		},
+		{
+			"container": "/usr/src/app/homeassistant/custom_components"
+		}
+	],
 	"devices": [{
 			"/dev/ttyACM0": "/dev/ttyUSB0"
 		},
@@ -17,11 +24,4 @@
 			"/dev/ttyUSB1": "/dev/ttyUSB1"
 		}
 	],
-	"volumes": [{
-			"container": "/usr/local/share/python-openzwave/config/options.xml"
-		},
-		{
-			"container": "/usr/src/app/homeassistant/custom_components"
-		}
-	]
 }]
